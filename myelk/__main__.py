@@ -3,10 +3,10 @@ import os
 import argparse
 from unittest import TestLoader, TextTestRunner
 
-# mysys Modules
-from mysys.dockerize import Docker
+# myelk Modules
+from myelk.dockerize import Docker
 
-from mysys.logger import Logger
+from myelk.logger import Logger
 
 if __name__ == '__main__':
     name = "myelkstack"
@@ -33,7 +33,7 @@ if __name__ == '__main__':
         logger.info("{}: test_args_count is {}".format(name, test_args_count))
         # get package & tests path
         pkg_path = os.path.dirname(os.path.abspath(__file__))
-        logger.debug("{}: mysys package path is {}".format(name, pkg_path))
+        logger.debug("{}: myelk package path is {}".format(name, pkg_path))
         test_path = os.path.join(pkg_path, 'tests')
         logger.info("{}: test_path is {}".format(name, test_path))
         if test_args_count == 0:
@@ -52,7 +52,7 @@ if __name__ == '__main__':
         logger.debug("{}: test result is {}".format(name, result))
 
     else:
-        # run mysys option
+        # run myelk option
         logger.info("{}: args is {}".format(name, args))
         reset_flag = args.reset
         logger.info("{}: reset_flag is {}".format(name, reset_flag))

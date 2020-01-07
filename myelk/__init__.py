@@ -102,5 +102,5 @@ config_schemas = {
     }
 }
 
-import mysys.logger
-import mysys.dockerize
+import myelk.logger
+import myelk.dockerize

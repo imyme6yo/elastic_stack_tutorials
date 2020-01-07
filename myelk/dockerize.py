@@ -9,10 +9,10 @@ import docker
 from docker.errors import ImageNotFound # image not found
 from docker.errors import NotFound
 
-from mysys.logger import Logger
+from myelk.logger import Logger
 
-from mysys import Schema
-from mysys import config_schemas
+from myelk import Schema
+from myelk import config_schemas
 
 class Docker:
     PULL_CONFIG_FILENAME = "pull_config.json"
