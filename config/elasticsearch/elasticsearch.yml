@@ -1,0 +1,7 @@
+cluster.name: "myelkstack-es"
+
+node.name: "myelkstack-es-01"
+node.data: true
+
+xpack.monitoring.enabled: true
+xpack.monitoring.collection.enabled: true

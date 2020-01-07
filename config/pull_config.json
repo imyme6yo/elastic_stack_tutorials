@@ -1,0 +1,14 @@
+[
+    {
+        "repository": "docker.elastic.co/elasticsearch/elasticsearch",
+        "tag": "7.4.2"
+    },
+    {
+        "repository": "docker.elastic.co/kibana/kibana",
+        "tag": "7.4.2"
+    },
+    {
+        "repository": "docker.elastic.co/logstash/logstash",
+        "tag": "7.4.2"
+    }
+]
