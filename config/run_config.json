@@ -1,7 +1,7 @@
 [
     {
         "image": "docker.elastic.co/elasticsearch/elasticsearch:7.4.2", 
-        "name": "myelkstack-es",
+        "name": "myelk-es",
         "detach": true,
         "environment": {
             "MAX_MAP_COUNT": 262144,
@@ -9,7 +9,7 @@
             "http.cors.enabled": "true",
             "http.cors.allow-origin": "*"
         },
-        "network": "myelkstack-network",
+        "network": "myelk-network",
         "ports": {
             "9200/tcp": 8382,
             "9300/tcp": 8383
@@ -17,21 +17,21 @@
     },
     {
         "image": "docker.elastic.co/kibana/kibana:7.4.2", 
-        "name": "myelkstack-kibana",
+        "name": "myelk-kibana",
         "detach": true,
-        "network": "myelkstack-network",
+        "network": "myelk-network",
         "ports": {
             "5601/tcp": 8384
         },
         "environment": {
-            "ELASTICSEARCH_HOSTS": "http://mymonitor-es:9200"
+            "ELASTICSEARCH_HOSTS": "http://myelk-es:9200"
         }
     },
     {
         "image": "docker.elastic.co/logstash/logstash:7.4.2",
-        "name": "myelkstack-logstash",
+        "name": "myelk-logstash",
         "detach": true,
-        "network": "myelkstack-network",
+        "network": "myelk-network",
         "ports": {
             "5601/tcp": 8385
         },
@@ -45,5 +45,6 @@
                 "mode": "ro"
             }
         }
-    },
+    }
+]
 

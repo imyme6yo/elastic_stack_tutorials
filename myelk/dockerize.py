@@ -69,12 +69,20 @@ class Docker:
         run_config_path = os.path.join(config, run_config_filename)
         build_config_path = os.path.join(config, build_config_filename)
         pull_config_path = os.path.join(config, pull_config_filename)
-        
+
+        # self.logger.critical(run_config_path)
+        # self.logger.critical(pull_config_path)
+        # self.logger.critical(build_config_path)
+
+        # self.logger.critical(os.path.isfile(run_config_path))
+        # self.logger.critical(os.path.isfile(pull_config_path))
+        # self.logger.critical(os.path.isfile(build_config_path))
+
+        self.logger.debug(os.listdir(os.path.dirname(run_config_path)))
         # validate path
         config_count = 0
-        self.logger.debug(os.listdir(os.path.dirname(run_config_path)))
         if os.path.isfile(run_config_path):
-            self.logger.debug(run_config_path)
+            self.logger.critical(run_config_path)
             with open(run_config_path) as run_config_file:
                 self.run_config = json.load(run_config_file)
             # validate run config
