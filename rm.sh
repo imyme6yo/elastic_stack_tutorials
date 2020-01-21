@@ -1,0 +1,1 @@
+docker stop myelk-logstash myelk-kibana myelk-es && docker rm myelk-logstash myelk-kibana myelk-es 

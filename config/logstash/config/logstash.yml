@@ -1,5 +1,5 @@
 http.host: "0.0.0.0"
-xpack.monitoring.elasticsearch.hosts: [ "http://myelkstack-es:9200" ]
+xpack.monitoring.elasticsearch.hosts: [ "http://myelk-es:9200" ]
 
 # Settings file in YAML
 #
@@ -226,7 +226,7 @@ xpack.monitoring.elasticsearch.hosts: [ "http://myelkstack-es:9200" ]
 xpack.monitoring.enabled: true
 #xpack.monitoring.elasticsearch.username: logstash_system
 #xpack.monitoring.elasticsearch.password: password
-xpack.monitoring.elasticsearch.hosts: ["http://myelkstack-es:9200"]
+xpack.monitoring.elasticsearch.hosts: ["http://myelk-es:9200"]
 #xpack.monitoring.elasticsearch.ssl.certificate_authority: [ "/path/to/ca.crt" ]
 #xpack.monitoring.elasticsearch.ssl.truststore.path: path/to/file
 #xpack.monitoring.elasticsearch.ssl.truststore.password: password

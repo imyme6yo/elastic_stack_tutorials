@@ -36,11 +36,11 @@
             "5601/tcp": 8385
         },
         "volumes": {
-            "mymonitor/logstash/pipeline/logstash.conf": {
+            "logstash/pipeline/logstash.conf": {
                 "bind": "/usr/share/logstash/pipeline/logstash.conf",
                 "mode": "ro"
             },
-            "mymonitor/logstash/config/logstash.yml": {
+            "logstash/config/logstash.yml": {
                 "bind": "/usr/share/logstash/config/logstash.yml",
                 "mode": "ro"
             }

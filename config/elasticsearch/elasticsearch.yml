@@ -1,6 +1,6 @@
-cluster.name: "myelkstack-es"
+cluster.name: "myelk-es"
 
-node.name: "myelkstack-es-01"
+node.name: "myelk-es-01"
 node.data: true
 
 xpack.monitoring.enabled: true
